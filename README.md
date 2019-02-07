@@ -8,11 +8,17 @@ This repository contains the source for a single component of a real estate list
 
 ## Readme Contents
 
+- [Project subfolders]()
 - [Requirements and Dependencies](#requirements)
 - [Environment Setup](#environment-setup)
 - [Performance Optimizations](#performance-optimizations)
 - [API Documentation](#api-documentation)
 
+
+## Project Subforlders
+- [Image Carousel Component API](https://github.com/HackberryPie/image-carousel-component)
+- [Load Balancer Proxy](https://github.com/HackberryPie/listing-page-load-balancer)
+- [NginX Content-Caching Proxy](https://github.com/NCorreia100/Street-Breasy-Optimization/tree/master/nginx-proxy)
 
 ## Requirements
 
@@ -64,7 +70,7 @@ The optimization goals for this project were as follows:
 
 ## API Documentation
 
-[Image Carousel API Documentation](https://github.com/HackberryPie/image-carousel-component/blob/master/documentation/api-documentation.md)
+[API Documentation](https://github.com/HackberryPie/image-carousel-component/blob/master/documentation/api-documentation.md)
 
 ##Optimization Metrics
     - [https://docs.google.com/document/d/1vXppWpZGpDYjkNtJU35qRpkVJGpV_mEjU3HsvI0lV3M/edit](https://docs.google.com/document/d/1vXppWpZGpDYjkNtJU35qRpkVJGpV_mEjU3HsvI0lV3M/edit)
