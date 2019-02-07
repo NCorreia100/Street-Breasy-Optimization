@@ -6,7 +6,7 @@
 This repository contains the source for a single component of a real estate listing page built with a microservice architecture (SoA). The component is designed as a full stack service and includes a Node.Js API, a MongoDB database, a Nginx content-caching proxy and a Node.js load-balancer proxy. The API provides different image links to the client depending on a listing id number.
 
 
-## Readme Contents
+## Index of Contents
 
 - [Project subfolders](#project-subfolders)
 - [Requirements and Dependencies](#requirements)
