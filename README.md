@@ -1,7 +1,7 @@
 # Street Breasy Optimization Project
 > Street Breasy Project Introduction
 
-![component-screen-capture](listing-page-load-balancer-documentation/images/component-screen-capture.gif)
+![component-screen-capture](https://github.com/HackberryPie/image-carousel-component/blob/master/documentation/images/component-screen-capture-main.gif)
 
 This repository contains the source for a single component of a real estate listing page built with a microservice architecture (SoA). The component is designed as a full stack service and includes a Node.Js API, a MongoDB database, an Nginx content-cashing proxy and a load-balancer proxy. The API provides different image links to the client depending on a listing id number.
 
@@ -9,10 +9,9 @@ This repository contains the source for a single component of a real estate list
 ## Readme Contents
 
 - [Requirements and Dependencies](#requirements)
-- [Development Setup and Server Provisioning](#development-setup-and-server-provisioning)
+- [Environment Setup](#environment-setup)
 - [Performance Optimizations](#performance-optimizations)
 - [API Documentation](#api-documentation)
-- [Visual Comparison](#visual-comparison)
 
 
 ## Requirements
@@ -28,7 +27,7 @@ This repository contains the source for a single component of a real estate list
 - [React](https://reactjs.org/docs/getting-started.html) front end framework
 - [Eric Meyer's CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
 
-## Development Setup and Server Provisioning
+## Environment Setup
 
 1. Create a server instance to run the project
 2. On the remote server, allow traffic through TCP protocol on ports 22 and 80 for SSH and HTTP and ICMP (for ping)
@@ -46,50 +45,32 @@ This repository contains the source for a single component of a real estate list
 
 ### Optimization goals
 The optimization goals for this project were as follows:
- - Decrease latency for a complete page load to not exceed 1 second
- - Increase server capacity to sustain at least 2'000 RPS (requests per second)
- - Diminuish error rate (such as connection time out and port in use)
- - Document metrics akin to each implementation
+    - Decrease latency for a complete page load to not exceed 1 second
+    - Increase server capacity to sustain at least 2'000 RPS (requests per second)
+    - Diminuish error rate (such as connection time out and port in use)
+    - Document metrics akin to each implementation
 
 
 ### Optimization tools / techniques
-    - Artillery.js for submiting large waves of requests (and get error rate)
-    - Newrelic.js to create reports on the performance of the server (latency and request-rate)
-    - Google's DevTools Performance Analyzer
+    - Webpack to compress all code into a single file with the required modules
+    - Babel to transpile JSX code to JavaScript and eariler versions of JavaScript (such as ES6 and ECMAScript2018) to ES5
     - Compression.js to apply gzip compression to reduce the response body size 
     - Morgan.js to log API requests and timing to complete the full request-response cycle
-    - Babel to transpile JSX code to JavaScript and eariler versions of JavaScript (such as ES6 and ECMAScript2018) to ES5
-    - Webpack to compress all code into a single file with the required modules
+    - Artillery.js for submiting large waves of requests (and get error rate)
+    - Newrelic.js to create reports on the performance of the server (latency and request-rate)
+    - Google's DevTools Performance Analyzer (page load performance)
   
 
 ## API Documentation
 
+[Image Carousel API Documentation](https://github.com/HackberryPie/image-carousel-component/blob/master/documentation/api-documentation.md)
 
-[Image Carousel API Documentation](documentation/api-documentation.md)
-
-
-
-
-
-
-
-
-
-
-
-
+##Optimization Metrics
+    - [https://docs.google.com/document/d/1vXppWpZGpDYjkNtJU35qRpkVJGpV_mEjU3HsvI0lV3M/edit](https://docs.google.com/document/d/1vXppWpZGpDYjkNtJU35qRpkVJGpV_mEjU3HsvI0lV3M/edit)
 
 ## Author
 
 * [**Nuno Correia**](https://www.linkedin.com/in/nuno-correia-901904132/)
 
 
-
-
-## References
-
-- [Installing MongoDB on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-18-04)
-- [Installing Node on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04)
-- [ReactCSSTransitionGroup Add-On Documentation](https://reactjs.org/docs/animation.html)
-- [Updating React Component State When Props Change](https://reactjs.org/docs/react-component.html#static-getderivedstatefromprops)
 
