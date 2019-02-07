@@ -8,17 +8,19 @@ This repository contains the source for a single component of a real estate list
 
 ## Readme Contents
 
-- [Project subfolders]()
+- [Project subfolders](#project-subfolders)
 - [Requirements and Dependencies](#requirements)
 - [Environment Setup](#environment-setup)
-- [Performance Optimizations](#performance-optimizations)
 - [API Documentation](#api-documentation)
+- [Back-end Performance Optimization](#performance-optimization)
 
 
 ## Project Subforlders
 - [Image Carousel Component API](https://github.com/HackberryPie/image-carousel-component)
 - [Load Balancer Proxy](https://github.com/HackberryPie/listing-page-load-balancer)
-- [NginX Content-Caching Proxy](https://github.com/NCorreia100/Street-Breasy-Optimization/tree/master/nginx-proxy)
+- [NginX Content-Caching Proxy]
+(https://github.com/NCorreia100/Street-Breasy-Optimization/tree/master/nginx-proxy)
+- [Database Scripts](https://github.com/HackberryPie/image-carousel-component/tree/master/database)
 
 ## Requirements
 
@@ -46,8 +48,11 @@ This repository contains the source for a single component of a real estate list
 9. Optionally, you may use a tool to start the node server such as [pm2](http://pm2.keymetrics.io/) or [docker](https://docs.docker.com/docker-hub/).
 10. Optionally you may also select a different port to receive incoming HTTP requests. To do so, modify the value of `GATEWAY_PORT`. Default is `80`.
 
+## API Documentation
 
-## Performance Optimizations
+[API Documentation](https://github.com/HackberryPie/image-carousel-component/blob/master/documentation/api-documentation.md)
+
+## Back-end Performance Optimization
 
 ### Optimization goals
 
@@ -65,12 +70,8 @@ The optimization goals for this project were as follows:
 - Morgan.js to log API requests and timing to complete the full request-response cycle
 - Artillery.js for submiting large waves of requests (and get error rate)
 - Newrelic.js to create reports on the performance of the server (latency and request-rate)
-- Google's DevTools Performance Analyzer (page load performance)
-  
+- Google's DevTools Performance Analyzer (page load performance)  
 
-## API Documentation
-
-[API Documentation](https://github.com/HackberryPie/image-carousel-component/blob/master/documentation/api-documentation.md)
 
 ##Optimization Metrics
     - [https://docs.google.com/document/d/1vXppWpZGpDYjkNtJU35qRpkVJGpV_mEjU3HsvI0lV3M/edit](https://docs.google.com/document/d/1vXppWpZGpDYjkNtJU35qRpkVJGpV_mEjU3HsvI0lV3M/edit)
