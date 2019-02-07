@@ -1,7 +1,7 @@
-# image-carousel-component
+# Street Breasy Optimization Project
 > Street Breasy Project Introduction
 
-![component-screen-capture](documentation/images/component-screen-capture.gif)
+![component-screen-capture](listing-page-load-balancer-documentation/images/component-screen-capture.gif)
 
 This repository contains the source for a single component of a real estate listing page built with a microservice architecture (SoA). The component is designed as a full stack service and includes a Node.Js API, a MongoDB database, an Nginx content-cashing proxy and a load-balancer proxy. The API provides different image links to the client depending on a listing id number.
 
