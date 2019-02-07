@@ -44,21 +44,22 @@ This repository contains the source for a single component of a real estate list
 ## Performance Optimizations
 
 ### Optimization goals
+
 The optimization goals for this project were as follows:
-    - Decrease latency for a complete page load to not exceed 1 second
-    - Increase server capacity to sustain at least 2'000 RPS (requests per second)
-    - Diminuish error rate (such as connection time out and port in use)
-    - Document metrics akin to each implementation
+- Decrease latency for a complete page load to not exceed 1 second
+- Increase server capacity to sustain at least 2'000 RPS (requests per second)
+- Diminuish error rate (such as connection time out and port in use)
+- Document metrics akin to each implementation
 
 
 ### Optimization tools / techniques
-    - Webpack to compress all code into a single file with the required modules
-    - Babel to transpile JSX code to JavaScript and eariler versions of JavaScript (such as ES6 and ECMAScript2018) to ES5
-    - Compression.js to apply gzip compression to reduce the response body size 
-    - Morgan.js to log API requests and timing to complete the full request-response cycle
-    - Artillery.js for submiting large waves of requests (and get error rate)
-    - Newrelic.js to create reports on the performance of the server (latency and request-rate)
-    - Google's DevTools Performance Analyzer (page load performance)
+- Webpack to compress all code into a single file with the required modules
+- Babel to transpile JSX code to JavaScript and eariler versions of JavaScript (such as ES6 and ECMAScript2018) to ES5
+- Compression.js to apply gzip compression to reduce the response body size 
+- Morgan.js to log API requests and timing to complete the full request-response cycle
+- Artillery.js for submiting large waves of requests (and get error rate)
+- Newrelic.js to create reports on the performance of the server (latency and request-rate)
+- Google's DevTools Performance Analyzer (page load performance)
   
 
 ## API Documentation
