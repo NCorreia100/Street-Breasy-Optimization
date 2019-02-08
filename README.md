@@ -15,7 +15,7 @@ This repository contains the source for a single component of a real estate list
 - [Back-end Performance Optimization](#performance-optimization)
 
 
-## Project Subforlders
+## Project Subfolders
 - [Image Carousel Component API](https://github.com/HackberryPie/image-carousel-component)
 - [Load Balancer Proxy](https://github.com/HackberryPie/listing-page-load-balancer)
 - [NginX Content-Caching Proxy]
